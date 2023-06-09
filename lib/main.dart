@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:file_picker/file_picker.dart';
 import 'package:image/image.dart' as img;
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -51,8 +52,15 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future getImage() async {
-    final pickedFile = await picker.pickImage(source: ImageSource.gallery);
-
+    // final pickedFile = await picker.pickImage(source: ImageSource.gallery); //it doesnt support windows
+    File? pickedFile;
+    FilePickerResult? result = await FilePicker.platform.pickFiles(
+      type: FileType.custom,
+      allowedExtensions: ['jpeg'],
+    );
+    if (result != null) {
+      pickedFile = File(result.files.single.path.toString());
+    }
     setState(() {
       _image = File(pickedFile!.path);
       _imageWidget = Image.file(_image!);
