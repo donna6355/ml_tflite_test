@@ -9,11 +9,19 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  image: ^4.0.17
+  image: ^3.0.2
   image_picker: ^0.8.7+5
-  tflite_flutter:
+  collection: ^1.15.0
+  logger: ^1.0.0
+
+  path_provider:
+  # tflite_flutter:
+  #   git:
+  #     url: https://github.com/am15h/tflite_flutter_plugin.git
+  #     ref: master
+  tflite_flutter_helper:
     git:
-      url: https://github.com/am15h/tflite_flutter_plugin.git
+      url: https://github.com/am15h/tflite_flutter_helper.git
       ref: master
   cupertino_icons: ^1.0.2
 
