@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
     File? pickedFile;
     FilePickerResult? result = await FilePicker.platform.pickFiles(
       type: FileType.custom,
-      allowedExtensions: ['jpeg'],
+      allowedExtensions: ['jpg'],
     );
     if (result != null) {
       pickedFile = File(result.files.single.path.toString());
