@@ -446,7 +446,7 @@ packages:
     source: hosted
     version: "0.5.1"
   tflite_flutter:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: tflite_flutter
       sha256: "79e3271acd223e36c724fa6708e356191851011dbcddc2149f0e644a4879e055"
@@ -457,9 +457,9 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: master
-      resolved-ref: "4fa5115e4f6c2175a20bae5f7a9ca16d471347e4"
-      url: "https://github.com/am15h/tflite_flutter_helper.git"
+      ref: "783f15e5a87126159147d8ea30b98eea9207ac70"
+      resolved-ref: "783f15e5a87126159147d8ea30b98eea9207ac70"
+      url: "https://github.com/filofan1/tflite_flutter_helper.git"
     source: git
     version: "0.3.0"
   tuple:
