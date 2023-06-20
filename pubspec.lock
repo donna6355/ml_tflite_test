@@ -457,8 +457,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "783f15e5a87126159147d8ea30b98eea9207ac70"
-      resolved-ref: "783f15e5a87126159147d8ea30b98eea9207ac70"
+      ref: master
+      resolved-ref: "4fa5115e4f6c2175a20bae5f7a9ca16d471347e4"
       url: "https://github.com/filofan1/tflite_flutter_helper.git"
     source: git
     version: "0.3.0"
